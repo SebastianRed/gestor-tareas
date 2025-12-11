@@ -5,7 +5,7 @@ public class Tarea {
     private int id;
     private String titulo;
     private String categoria;
-    private String prioridad; // ALTA, MEDIA, BAJA
+    private String prioridad;
     private boolean completada;
 
     public Tarea(int id, String titulo, String categoria, String prioridad) {
@@ -16,7 +16,6 @@ public class Tarea {
         this.completada = false;
     }
 
-    // Getters -> Get
     public int getId() {
         return id;
     }
@@ -37,7 +36,6 @@ public class Tarea {
         return completada;
     }
 
-    // Setters -> Set
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -50,13 +48,9 @@ public class Tarea {
         this.prioridad = prioridad;
     }
 
-    // Metodo de dominio
     public void marcarCompletada() {
         this.completada = true;
     }
-
-    // System.out.println(tarea);
-    // [23] Aprender JAVA | Programacion | ALTA | COMPLETADA
 
     @Override
     public String toString() {
